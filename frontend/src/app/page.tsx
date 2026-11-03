@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { FormEvent, useEffect, useMemo, useState } from "react";
 
 // Use same-origin /api routes; Next.js proxies them in development and Nginx in deployment.
@@ -163,7 +164,7 @@ export default function Home() {
         <div className="side-rule" />
         <div className="nav-item nav-active"><span className="nav-icon">◫</span> Overview</div>
         <div className="sidebar-note"><span className="pulse-dot" /> Complexity-aware scoring</div>
-        <div className="sidebar-bottom"><span className="mini-avatar">AI</span><div><strong>Analysis workspace</strong><small>Private cohort view</small></div></div>
+        <div className="sidebar-bottom"><Image className="aroha-logo" src="/aroha-logo.png" alt="Aroha Technologies" width={84} height={32} unoptimized /><div><strong>Analysis workspace</strong><small>Private cohort view</small></div></div>
       </aside>
 
       <section className="main-area">
