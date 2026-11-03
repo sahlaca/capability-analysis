@@ -1,0 +1,8 @@
+.git
+frontend/node_modules
+frontend/.next
+frontend/.env.local
+backend/.venv
+backend/__pycache__
+backend/data/processed
+backend/data/duckdb-tmp

@@ -1,0 +1,11 @@
+__pycache__/
+node_modules/
+.next/
+.venv/
+.env
+.env.local
+backend/data/processed/*.csv
+backend/data/duckdb-tmp/
+data/duckdb-tmp/
+backend/.env
+.env

@@ -1,0 +1,73 @@
+HOW TO RUN THE CAPABILITY ANALYSIS APP
+======================================
+
+Do these steps in order.
+
+
+STEP 1 - TURN ON DOCKER
+-----------------------
+Open the Docker Desktop app.
+Wait until it says it is running.
+
+
+STEP 2 - OPEN A TERMINAL
+------------------------
+Open the Terminal app.
+
+
+STEP 3 - GO TO THE PROJECT FOLDER
+---------------------------------
+Copy this line, paste it in the terminal, press Enter:
+
+cd "/Users/sahla_ca/Aroha/capability analysis/CapabilityAnalysis_FullStack"
+
+
+STEP 4 - START THE APP
+----------------------
+Copy this, paste it, press Enter:
+
+docker compose up -d
+
+Wait about 10 to 20 seconds.
+
+
+STEP 5 - CHECK IT STARTED
+-------------------------
+Copy this, paste it, press Enter:
+
+docker compose ps
+
+Look for the word "healthy" next to "backend".
+If you see it, you are good.
+
+
+STEP 6 - OPEN THE APP
+---------------------
+Open your browser and go to:
+
+http://localhost:8082
+
+That's it. The app is now running.
+
+
+WHEN YOU ARE DONE FOR THE DAY
+-----------------------------
+You can leave it running, or stop it with:
+
+docker compose down
+
+
+IMPORTANT
+---------
+In Step 4, do NOT add "--build". Just type:
+
+docker compose up -d
+
+
+IF SOMETHING LOOKS WRONG
+------------------------
+Run this to see the messages:
+
+docker compose logs -f --tail=50
+
+Press Ctrl+C to stop viewing the messages.
